@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <%= link_to "HOME", lists_path, class:"fs-1 nav-link active link-secondary ms-2 p-1" %>
+    </nav>
     <%= yield %>
   </body>
 </html>

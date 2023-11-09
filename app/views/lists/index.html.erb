@@ -1,0 +1,14 @@
+<div class="container d-flex justify-content-center">
+  <div class="card mt-3 text-center" style="width: 30rem;">
+    <h3>Lists</h3> <i class="fa-solid fa-book-bible"></i>
+    <%= link_to "New list", new_list_path, class:"btn btn-secondary btn-sm m-2" %>
+    <div class="card-header">
+      Name
+    </div>
+    <% @lists.each do |list| %>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><%=link_to list.name, list_path(list), class:"btn btn-secondary btn-sm" %></li>
+    </ul>
+    <% end %>
+  </div>
+</div>
