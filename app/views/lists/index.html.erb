@@ -7,7 +7,7 @@
     </div>
     <% @lists.each do |list| %>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"><%=link_to list.name, list_path(list), class:"btn btn-secondary btn-sm" %></li>
+      <li class="list-group pt-2 m-2"><%=link_to list.name, list_path(list), class:"d-block btn btn-secondary btn-sm" %></li>
     </ul>
     <% end %>
   </div>
