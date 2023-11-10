@@ -3,6 +3,7 @@
 
   <%= simple_form_for @list do |f|%>
   <%= f.input :name, placeholder: "List name", class:"form-control" %>
+  <%= f.input :image, as: :file %>
   <%= f.button :submit, class: "btn btn-secondary btn-sm m-2" %>
   <% end %>
 </div>
