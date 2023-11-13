@@ -1,9 +1,17 @@
-<div class="container mt-3">
-  <h1 class="form-label">New list</h1>
+<section class="container">
+  <div class="login-container">
+    <div class="circle circle-one"></div>
+    <div class="form-container">
+      <h1 class="opacity">New list</h1>
 
-  <%= simple_form_for @list do |f|%>
-  <%= f.input :name, placeholder: "List name", class:"form-control" %>
-  <%= f.input :image, as: :file %>
-  <%= f.button :submit, class: "btn btn-secondary btn-sm m-2" %>
-  <% end %>
-</div>
+      <%= simple_form_for @list do |f|%>
+      <%= f.input :name, placeholder: "List name" %>
+      <%= f.input :image, as: :file %>
+      <%= f.button :submit, class: "opacity" %>
+      <% end %>
+    </div>
+    <div class="circle circle-two"></div>
+  </div>
+  <div class="theme-btn-container"></div>
+</section>
+<%= javascript_tag 'script' %>

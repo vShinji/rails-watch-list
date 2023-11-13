@@ -1,9 +1,17 @@
-<div class="container mt-3">
-  <h1 class="form-label">New bookmark</h1>
+<section class="container">
+  <div class="login-container">
+    <div class="circle circle-one"></div>
+    <div class="form-container">
+      <h1 class="opacity">New bookmark</h1>
 
-  <%= simple_form_for [@list, @bookmark] do |f| %>
-    <%= f.association :movie, class:"form-control" %>
-    <%= f.input :comment, class:"form-control" %>
-    <%= f.button :submit, class:"btn btn-secondary btn-sm m-2"%>
-  <% end %>
-</div>
+      <%= simple_form_for [@list, @bookmark] do |f|%>
+      <%= f.association :movie %>
+      <%= f.input :comment %>
+      <%= f.button :submit, class: "opacity" %>
+      <% end %>
+    </div>
+    <div class="circle circle-two"></div>
+  </div>
+  <div class="theme-btn-container"></div>
+</section>
+<%= javascript_tag 'script' %>

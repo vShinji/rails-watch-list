@@ -1,0 +1,34 @@
+:root {
+  --background: #1a1a2e;
+  --color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}fgdf
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  background: var(--background);
+  color: var(--color);
+  letter-spacing: 1px;
+  transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -ms-trasition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
